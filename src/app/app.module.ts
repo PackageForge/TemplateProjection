@@ -2,13 +2,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { PiecesComponent } from './pieces/pieces.component';
+import { TemplateLibraryModule, TemplateProjectionModule } from 'projects/template-projection/src/public-api';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PiecesComponent,
+    BooksComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TemplateProjectionModule,
+    TemplateLibraryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TemplateProjection';
+  bookInfo = { color: 'red', thickness: 70, height: 300, title: 'Moby Dick' };
+  constructor() {
+    setTimeout(() => {
+      this.bookInfo.title = "Herman Melville";
+    }, 1000);
+  }
 }
